@@ -43,11 +43,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblCmdTxt = new System.Windows.Forms.Label();
+            this.btnClearPages = new System.Windows.Forms.Button();
+            this.tbSignID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbString
             // 
-            this.tbString.Location = new System.Drawing.Point(100, 190);
+            this.tbString.Location = new System.Drawing.Point(100, 210);
             this.tbString.Name = "tbString";
             this.tbString.Size = new System.Drawing.Size(242, 20);
             this.tbString.TabIndex = 0;
@@ -55,7 +58,7 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(348, 183);
+            this.btnSend.Location = new System.Drawing.Point(348, 203);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(85, 32);
             this.btnSend.TabIndex = 1;
@@ -68,36 +71,36 @@
             this.cmbCommPort.FormattingEnabled = true;
             this.cmbCommPort.Location = new System.Drawing.Point(100, 25);
             this.cmbCommPort.Name = "cmbCommPort";
-            this.cmbCommPort.Size = new System.Drawing.Size(242, 21);
+            this.cmbCommPort.Size = new System.Drawing.Size(112, 21);
             this.cmbCommPort.TabIndex = 2;
             // 
             // cmbColour
             // 
             this.cmbColour.FormattingEnabled = true;
-            this.cmbColour.Location = new System.Drawing.Point(100, 69);
+            this.cmbColour.Location = new System.Drawing.Point(100, 89);
             this.cmbColour.Name = "cmbColour";
-            this.cmbColour.Size = new System.Drawing.Size(242, 21);
+            this.cmbColour.Size = new System.Drawing.Size(112, 21);
             this.cmbColour.TabIndex = 3;
             // 
             // cmbFonts
             // 
             this.cmbFonts.FormattingEnabled = true;
-            this.cmbFonts.Location = new System.Drawing.Point(100, 96);
+            this.cmbFonts.Location = new System.Drawing.Point(100, 116);
             this.cmbFonts.Name = "cmbFonts";
-            this.cmbFonts.Size = new System.Drawing.Size(242, 21);
+            this.cmbFonts.Size = new System.Drawing.Size(112, 21);
             this.cmbFonts.TabIndex = 4;
             // 
             // cmbTransitions
             // 
             this.cmbTransitions.FormattingEnabled = true;
-            this.cmbTransitions.Location = new System.Drawing.Point(100, 123);
+            this.cmbTransitions.Location = new System.Drawing.Point(100, 143);
             this.cmbTransitions.Name = "cmbTransitions";
-            this.cmbTransitions.Size = new System.Drawing.Size(242, 21);
+            this.cmbTransitions.Size = new System.Drawing.Size(112, 21);
             this.cmbTransitions.TabIndex = 5;
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(348, 19);
+            this.btnOpen.Location = new System.Drawing.Point(218, 19);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(85, 31);
             this.btnOpen.TabIndex = 6;
@@ -117,7 +120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 72);
+            this.label2.Location = new System.Drawing.Point(45, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 7;
@@ -126,7 +129,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 99);
+            this.label3.Location = new System.Drawing.Point(54, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 7;
@@ -135,7 +138,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 126);
+            this.label4.Location = new System.Drawing.Point(32, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 7;
@@ -144,7 +147,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 197);
+            this.label5.Location = new System.Drawing.Point(32, 217);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 7;
@@ -153,21 +156,51 @@
             // lblCmdTxt
             // 
             this.lblCmdTxt.AutoSize = true;
-            this.lblCmdTxt.Location = new System.Drawing.Point(97, 230);
+            this.lblCmdTxt.Location = new System.Drawing.Point(97, 250);
             this.lblCmdTxt.Name = "lblCmdTxt";
             this.lblCmdTxt.Size = new System.Drawing.Size(75, 13);
             this.lblCmdTxt.TabIndex = 8;
             this.lblCmdTxt.Text = "CommandText";
             // 
+            // btnClearPages
+            // 
+            this.btnClearPages.Location = new System.Drawing.Point(100, 299);
+            this.btnClearPages.Name = "btnClearPages";
+            this.btnClearPages.Size = new System.Drawing.Size(85, 32);
+            this.btnClearPages.TabIndex = 9;
+            this.btnClearPages.Text = "Clear Pages";
+            this.btnClearPages.UseVisualStyleBackColor = true;
+            this.btnClearPages.Click += new System.EventHandler(this.btnClearPages_Click);
+            // 
+            // tbSignID
+            // 
+            this.tbSignID.Location = new System.Drawing.Point(100, 61);
+            this.tbSignID.Name = "tbSignID";
+            this.tbSignID.Size = new System.Drawing.Size(28, 20);
+            this.tbSignID.TabIndex = 10;
+            this.tbSignID.Text = "1";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(40, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Sign ID:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 269);
+            this.ClientSize = new System.Drawing.Size(490, 333);
+            this.Controls.Add(this.tbSignID);
+            this.Controls.Add(this.btnClearPages);
             this.Controls.Add(this.lblCmdTxt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOpen);
@@ -178,7 +211,7 @@
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.tbString);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ProliteSignTester";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -202,6 +235,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblCmdTxt;
+        private System.Windows.Forms.Button btnClearPages;
+        private System.Windows.Forms.TextBox tbSignID;
+        private System.Windows.Forms.Label label6;
     }
 }
 
